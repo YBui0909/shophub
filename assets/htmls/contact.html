@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="app">
+        <header id="header" class="header">
+            <div class="grid wide">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-login">
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnFacebook()" class="header__navbar-login--icon-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnTwitter()" class="header__navbar-login--icon-link"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnReddit()" class="header__navbar-login--icon-link"><i class="fa-brands fa-reddit"></i></a>
+                        </li>
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnLinkedIn()" class="header__navbar-login--icon-link"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnTelegram()" class="header__navbar-login--icon-link"><i class="fa-brands fa-telegram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-contact">
+                        <li class="header__navbar-contact--phone">
+                            <i class="fa-solid fa-phone"></i> <a href="tel:0364159646">036-415-9646</a>
+                        </li>
+                        <li class="header__navbar-contact--place">
+                            <i class="fa-solid fa-location-dot"></i> Bình Lâm, Hiệp Đức, Quảng Nam
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-convert">
+                        <li class="header__navbar-convert-currency">
+                            USD $<i class="fa-solid fa-chevron-down"></i>
+                            <ul class="header__navbar-contact--phone-list">
+                                <li>VNĐ đ</li>
+                                <li>EUR €</li>
+                                <li>USD $</li>
+                                <li>JPY ¥</li>
+                                <li>GBP £</li>
+                            </ul>
+                        </li>
+                        <li class="header__navbar-convert-currency">
+                            Tiếng Việt<i class="fa-solid fa-chevron-down"></i>
+                            <ul class="header__navbar-contact--language-list">
+                                <li>Tiếng Việt</li>
+                                <li>Tiếng Anh</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-with-search">
+                    <a href="../../index.html" class="header_search-go-home"><i class="fa-solid fa-house"></i></a>
+
+                    <a href="../../index.html" class="header__logo" style="margin-left: 14px;">
+                        <i class="header__logo-icon fa-brands fa-shopify"></i>
+                        <div class="header__logo-info">
+                            <div class="header__logo-info-store-name">Shop</div>
+                            <div class="header__logo-info-store-name">Hub</div>
+                        </div>
+                    </a>
+                    
+                    <ul class="header__search-feature">
+                        <li id="header__search-feature-icon-sign" class="header__search-feature-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </li>
+                        <li id="header__search-feature-icon-notify" class="header__search-feature-icon"
+                            style="margin-left: 40px;">
+                            <i class="fa-sharp fa-regular fa-bell"></i>
+                            <ul class="header__search-feature-icon-notify-list">
+                                <h1 class="header__search-feature-icon-notify-head">Thông báo mới nhận</h1>
+                                <li class="header__search-feature-icon-notify-item">
+                                    <img src="https://images.freeimages.com/fic/images/icons/573/must_have/256/user.png"
+                                        alt="" class="header__search-feature-icon-notify-img">
+                                    <div class="header__search-feature-icon-notify-content">
+                                        <h5 class="header__search-feature-icon-notify-content-head">Xác thực tài khoản
+                                            của bạn!</h5>
+                                        <span class="header__search-feature-icon-notify-content-description">Xin chào!
+                                            Chúng tôi cần xác thực tài khoản của bạn để đảm bảo an toàn và bảo mật thông
+                                            tin cá nhân. Vui lòng kiểm tra hộp thư đến của bạn để nhận mã xác thực. Sau
+                                            đó, hãy nhập mã vào ứng dụng của chúng tôi để hoàn tất quá trình xác thực.
+                                            Nếu bạn không nhận được email từ chúng tôi, vui lòng kiểm tra thư mục Spam
+                                            hoặc liên hệ với bộ phận hỗ trợ của chúng tôi để được trợ giúp</span>
+                                    </div>
+                                </li>
+                                <li class="header__search-feature-icon-notify-item">
+                                    <img src="https://media.dolenglish.vn/PUBLIC/MEDIA/cd970e7d-4ed6-4b1e-902e-9f898b33edca.png"
+                                        alt="" class="header__search-feature-icon-notify-img">
+                                    <div class="header__search-feature-icon-notify-content">
+                                        <h5 class="header__search-feature-icon-notify-content-head">Voucher Freeship 50k
+                                        </h5>
+                                        <span class="header__search-feature-icon-notify-content-description">Mã Freeship
+                                            50k cho đơn hàng 0đ bất kì có sẵn trong ví<br>Sản phầm sale sốc sắp cháy
+                                            hàng</span>
+                                    </div>
+                                </li>
+                                <li class="header__search-feature-icon-notify-item">
+                                    <img src="https://cards.vpbank.com.vn/landing/3736ccafb43a08a0e17428ba70b0e6e7.png"
+                                        alt="" class="header__search-feature-icon-notify-img">
+                                    <div class="header__search-feature-icon-notify-content">
+                                        <h5 class="header__search-feature-icon-notify-content-head">Bạn ơi có Voucher
+                                            giảm giá đến 200.000đ</h5>
+                                        <span class="header__search-feature-icon-notify-content-description">Voucher
+                                            Xtra có sẵn trong kho Voucher<br>Loạt sản phẩm sale khủng đợi bạn!</span>
+                                    </div>
+                                </li>
+                                <li class="header__search-feature-icon-notify-item">
+                                    <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgrttr7kwb8z2c"
+                                        alt="" class="header__search-feature-icon-notify-img">
+                                    <div class="header__search-feature-icon-notify-content">
+                                        <h5 class="header__search-feature-icon-notify-content-head">ybv22ns_ đã trả lời
+                                            bình luận của bạn</h5>
+                                        <span class="header__search-feature-icon-notify-content-description">Balo cầm
+                                            rất nặng tay, chắc chắn, không chỉ thừa, đường may cẩn thận, dày dặn nha,
+                                            giao hàng nhanh, đặt hôm trước, hôm sau đã nhận được rồi. Nói chung là ưng
+                                            lắm nha, rcm m.n nên mua</span>
+                                    </div>
+                                </li>
+                                <h5 class="header__search-feature-icon-notify-bottom">Xem tất cả</h5>
+                            </ul>
+                        </li>
+                        <li id="header__search-feature-icon-cart" class="header__search-feature-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="header__search-feature-icon-cart-product">
+                                <h2 class="header__search-feature-icon-cart-product-head">Sản phẩm mới thêm</h2>
+                                <ul class="header__search-feature-icon-cart-list">
+                                    <li class="header__search-feature-icon-cart-item">
+                                        <div class="header__search-feature-icon-cart-item-img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-23020-zyr9167z8lnv30);">
+                                        </div>
+                                        <div class="header__search-feature-icon-cart-item-content">Dép nam nữ quai ngang
+                                            dập chìm chữ rất hót 2023 size 38-43</div>
+                                        <div class="header__search-feature-icon-cart-item-price">14.000đ</div>
+                                    </li>
+                                    <li class="header__search-feature-icon-cart-item">
+                                        <div class="header__search-feature-icon-cart-item-img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/ea1bd99a5f2a3d7a90560a5609c0ab33);">
+                                        </div>
+                                        <div class="header__search-feature-icon-cart-item-content">Dép nam nữ quai ngang
+                                            dập chìm chữ rất hót 2023 size 38-43</div>
+                                        <div class="header__search-feature-icon-cart-item-price">25.000đ</div>
+                                    </li>
+                                    <li class="header__search-feature-icon-cart-item">
+                                        <div class="header__search-feature-icon-cart-item-img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/bcbaa1a1563639ccefd93df1a1462f1a);">
+                                        </div>
+                                        <div class="header__search-feature-icon-cart-item-content">kính bơi trẻ em cao
+                                            cấp Kính bơi chống mờ cho bé trai và bé gái</div>
+                                        <div class="header__search-feature-icon-cart-item-price">79.000đ</div>
+                                    </li>
+                                </ul>
+                                <div class="header__search-feature-icon-cart-bottom">
+                                    <h3>Xem giỏ hàng</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="header__search-feature-icon-bar" class="header__search-feature-icon">
+                            <i class="fa-solid fa-bars"></i>
+                            <div class="header__search-feature-icon-bar-list">
+                                <ul class="header__search-feature-icon-bar-nav">
+                                    <h3>Quick Link</h3>
+                                    <li><a href="../../index.html" class="header__search-feature-icon-bar-nav-item">Home</a></li>
+                                    <li><a href="./about.html" class="header__search-feature-icon-bar-nav-item">About</a></li>
+                                    <li><a href="./contact.html" class="header__search-feature-icon-bar-nav-item">Contact</a></li>
+                                    <li><a href="./policy.html" class="header__search-feature-icon-bar-nav-item">Policy</a></li>
+                                </ul>
+                                <ul class="header__search-feature-icon-bar-cat">
+                                    <h3>Category</h3>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('bagBlock')">Bag</li>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('shoesBlock')">Shoes</li>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('glassBlock')">Glass</li>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('jacketBlock')">Jacket</li>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('perfumeBlock')">Teedy Bear</li>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('dressBlock')">Dress</li>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('shortBlock')">Hat</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="grid wide">
+                <div id="container__contact">
+                    <h1 class="container__contact-heading">&bull; Keep in Touch &bull;</h1>
+                    <div class="underline">
+                    </div>
+                    <div class="icon_wrapper">
+                        <svg class="icon" viewBox="0 0 145.192 145.192">
+                            <path
+                                d="M126.82,32.694c-2.804,0-5.08,2.273-5.08,5.075v2.721c-1.462,0-2.646,1.185-2.646,2.647v1.995    c0,1.585,1.286,2.873,2.874,2.873h20.577c1.462,0,2.646-1.185,2.646-2.647v-3.041c0-1.009-0.816-1.825-1.823-1.825v-2.722    c0-2.802-2.276-5.075-5.079-5.075h-1.985v-3.829c0-3.816-3.095-6.912-6.913-6.912h-0.589h-20.45c0-2.67-2.164-4.835-4.833-4.835    H56.843c-2.67,0-4.835,2.165-4.835,4.835H34.356v-3.384h-9.563v3.384v1.178h-7.061v1.416c-2.67,0.27-10.17,1.424-13.882,5.972    c-1.773,2.17-2.44,4.791-1.983,7.793c0.463,3.043,1.271,6.346,2.128,9.841c2.354,9.616,5.024,20.515,0.549,28.077    C2.647,79.44-3.125,90.589,2.201,99.547c4.123,6.935,13.701,10.44,28.5,10.44c1.186,0,2.405-0.023,3.658-0.068v9.028h-0.296    c-2.516,0-4.558,2.039-4.558,4.558v4.566h100.04v-4.564c0-2.519-2.039-4.558-4.558-4.558h-0.297V84.631h0.297    c2.519,0,4.558-2.037,4.558-4.556v-0.009c0-2.516-2.039-4.556-4.556-4.556l-36.786-0.009V61.973c0-2.193-1.777-3.971-3.972-3.971    v-4.711h0.456c1.629,0,2.952-1.32,2.952-2.949h14.227V34.459h1.658c2.672,0,4.834-2.165,4.834-4.834h20.45v3.069H126.82z     M34.06,75.511c-2.518,0-4.558,2.04-4.558,4.556v0.009c0,2.519,2.042,4.556,4.558,4.556h0.296v24.12l-0.042-1.168    c-15.994,0.574-26.122-2.523-30.106-9.229C-0.464,90.5,4.822,80.347,6.55,77.423c4.964-8.382,2.173-19.774-0.29-29.825    c-0.843-3.442-1.639-6.696-2.088-9.638c-0.354-2.35,0.129-4.3,1.484-5.958c3.029-3.714,9.509-4.805,12.076-5.1v1.233h7.061v1.49    v2.684c-2.403,1.114-4.153,2.997-4.676,5.237H18.15c-0.584,0-1.056,0.474-1.056,1.056v0.83c0,0.584,0.475,1.056,1.056,1.056h1.984    c0.561,2.18,2.304,3.999,4.658,5.092v0.029c0,0-2.282,20.823,16.479,22.099v1.102c0,1.177,0.955,2.133,2.133,2.133h3.297    c1.178,0,2.133-0.956,2.133-2.133V50.135c0-1.177-0.955-2.132-2.133-2.132h-3.297c-1.178,0-2.133,0.955-2.133,2.132    c-1.575-0.235-5.532-1.17-6.635-4.547c2.36-1.092,4.109-2.913,4.669-5.097h1.308c0.722,0,1.309-0.584,1.309-1.308v-0.578    c0-0.584-0.475-1.056-1.056-1.056h-1.539c-0.542-2.332-2.416-4.271-4.968-5.363v-2.559h17.651c0,2.67,2.166,4.835,4.836,4.835 h2.392v15.88h13.639c0,1.629,1.321,2.949,2.951,2.949h0.899v4.711c-2.194,0-3.972,1.778-3.972,3.971v13.529L34.06,75.511z     M95.188,101.78c0,8.655-7.012,15.665-15.664,15.665c-8.653,0-15.667-7.01-15.667-15.665c0-8.647,7.014-15.664,15.667-15.664    C88.177,86.116,95.188,93.132,95.188,101.78z M97.189,45.669h-9.556c0-0.896-0.726-1.62-1.619-1.62H74.494    c-0.896,0-1.621,0.727-1.621,1.62h-8.967v-11.21h33.283V45.669z">
+                            </path>
+                            <path
+                                d="M70.865,101.78c0,4.774,3.886,8.657,8.66,8.657c4.774,0,8.657-3.883,8.657-8.657c0-4.773-3.883-8.656-8.657-8.656    C74.751,93.124,70.865,97.006,70.865,101.78z">
+                            </path>
+                        </svg>
+                    </div>
+                    <form action="#" method="post" class="container__contact-form">
+                        <div class="container__contact-form-name">
+                            <label for="container__contact-form-name"></label>
+                            <input type="text" placeholder="My name is" name="name" id="name_input" required>
+                        </div>
+                        <div class="container__contact-form-email">
+                            <label for="container__contact-form-email"></label>
+                            <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+                        </div>
+                        <div class="container__contact-form-telephone">
+                            <label for="container__contact-form-telephone"></label>
+                            <input type="text" placeholder="My number is" name="telephone" id="telephone_input"
+                                required>
+                        </div>
+                        <div class="container__contact-form-subject">
+                            <label for="container__contact-form-subject"></label>
+                            <select placeholder="Subject line" name="subject" id="subject_input" required>
+                                <option disabled hidden selected>Subject line</option>
+                                <option>I'd like to start a project</option>
+                                <option>I'd like to ask a question</option>
+                                <option>I'd like to make a proposal</option>
+                            </select>
+                        </div>
+                        <div class="container__contact-form-message">
+                            <label for="container__contact-form-message"></label>
+                            <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30"
+                                rows="5" required></textarea>
+                        </div>
+                        <div class="container__contact-form-submit">
+                            <input type="button" value="Send Message" id="form_button" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row footer-container">
+                    <div class="col l-3 m-4 c-4 footer-content">
+                        <h1 class="footer-content-head">Quick Links</h1>
+                        <ul class="footer-content-list">
+                            <li class="footer-content-item"><a href="../../index.html"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Home</a></li>
+                            <li class="footer-content-item"><a href="#product"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Product</a></li>
+                            <li class="footer-content-item"><a href="../htmls/about.html"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>About</a></li>
+                            <li class="footer-content-item"><a href="../htmls/contact.html"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Contact</a></li>
+                            <li class="footer-content-item"><a href="../htmls/policy.html"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-4 c-4 footer-content">
+                        <h1 class="footer-content-head">Resources</h1>
+                        <ul class="footer-content-list">
+                            <li class="footer-content-item"><a href="https://www.youtube.com/"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Youtube</a></li>
+                            <li class="footer-content-item"><a href="https://chat.openai.com/"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>ChatGPT</a></li>
+                            <li class="footer-content-item"><a href="https://shopee.vn/"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Shopee</a></li>
+                            <li class="footer-content-item"><a
+                                    href="https://unsplash.com/s/collections/shopping?plus=none"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Unsplash</a></li>
+                            <li class="footer-content-item"><a href="https://fontawesome.com/search?q=star&o=r"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Fontawesome</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-4 c-4 footer-content">
+                        <h1 class="footer-content-head">My Socials</h1>
+                        <ul class="footer-content-list">
+                            <li class="footer-content-item footer-content-item-social"><a
+                                    href="https://www.facebook.com/ybvns/"><i
+                                        class="fa-brands fa-facebook"></i>Facebook</a></li>
+                            <li class="footer-content-item footer-content-item-social"><a
+                                    href="https://www.instagram.com/ybvns/"><i
+                                        class="fa-brands fa-instagram"></i>Instagram</a></li>
+                            <li class="footer-content-item footer-content-item-social"><a
+                                    href="https://github.com/YBui0909"><i class="fa-brands fa-github"></i>Github</a>
+                            </li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"><i
+                                        class="fa-brands fa-telegram"></i>Telegram</a></li>
+                            <li class="footer-content-item footer-content-item-social"><a
+                                    href="https://www.tiktok.com/@buiy.22ns"><i
+                                        class="fa-brands fa-tiktok"></i>Tiktok</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-12 c-12 footer-content">
+                        <h1 class="footer-content-head">Payment Methods</h1>
+                        <ul class="footer-content-list footer-content-pay">
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay1.png" alt=""></a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay2.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay3.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay4.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay5.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay6.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay7.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay8.png" alt="">
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-12 footer-copyright" style="display: flex;">
+                        <div class="footer-copyright-reserve">© 2023 ShopHub. Tất cả các quyền được bảo lưu.</div>
+                        <a href="../htmls/policy.html" class="footer-copyright-privacy-policy">CHÍNH SÁCH BẢO
+                            MẬT</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Model layout -->
+    <div id="my-modal" class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form contact-auth-form">
+                <h1 class="auth-form-header">Thank You!</h1>
+                <div class="auth-form-content"> Thank you so much for taking the time to provide feedback on our
+                    product. We greatly appreciate your input and value your opinion. Your feedback helps us
+                    understand how our product is being received and allows us to make any necessary improvements.
+                </div>
+                <a class="auth-form-btn" href="../../index.html">
+                    <span>Go Home</span>
+                    <div class="liquid"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="my-modal_sign" class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form" style="background-color: transparent; box-shadow: none; width: unset; padding: 0;">
+                <div class="auth-form-main">
+                    <input type="checkbox" id="auth-form-main-chk" aria-hidden="true">
+
+                    <div class="auth-form-main-signup">
+                        <form class="auth-form-main-signup-form">
+                            <label class="auth-form-main-signup-label" for="auth-form-main-chk" aria-hidden="true">Sign
+                                up</label>
+                            <input type="text" name="txt" placeholder="User name" required="">
+                            <input type="email" name="email" placeholder="Email/Phone" required="">
+                            <input type="password" name="pswd" placeholder="Password" required="">
+                            <button>Sign up</button>
+                        </form>
+                    </div>
+
+                    <div class="auth-form-main-login">
+                        <form class="auth-form-main-login-form">
+                            <label class="auth-form-main-login-label" for="auth-form-main-chk"
+                                aria-hidden="true">Login</label>
+                            <input type="email" name="email" placeholder="Email/Phone" required="">
+                            <input type="password" name="pswd" placeholder="Password" required="">
+                            <button>Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../javascripts/js.js"></script>
+    <script src="../javascripts/contact.js"></script>
+    <script>
+        var headerIconBar = document.getElementById(
+          "header__search-feature-icon-bar"
+        );
+        var headerBarList = document.querySelector(
+          ".header__search-feature-icon-bar-list"
+        );
+  
+        headerIconBar.addEventListener("click", function (event) {
+          event.stopPropagation();
+          var isListDisplayed = headerBarList.style.display === "block";
+  
+          if (isListDisplayed) {
+            headerBarList.style.display = "none";
+          } else {
+            headerBarList.style.display = "block";
+          }
+        });
+  
+        document.addEventListener("click", function (event) {
+          if (!headerIconBar.contains(event.target)) {
+            headerBarList.style.display = "none";
+          }
+        });
+      </script>
+</body>
+
+</html>

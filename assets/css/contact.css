@@ -1,0 +1,378 @@
+@media (max-width: 1023px) {
+    .footer-container::before{
+        display: none;
+    }
+
+    .container_showmore{
+        padding-top: 44px;
+    }
+}
+
+select {
+    text-transform: none;
+}
+
+input,
+select,
+textarea {
+    color: #5A5A5A;
+    margin: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+#container__contact {
+    border: solid 3px #474544;
+    max-width: 768px;
+    margin: 60px auto;
+    position: relative;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-top: 134px;
+}
+
+.container__contact-form {
+    padding: 37.5px;
+    margin-top: 30px;
+
+}
+
+.container__contact-heading {
+    color: #474544;
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    border-bottom: solid 2px #474544;
+    margin: -0.512em auto;
+    width: 80px;
+}
+
+.icon_wrapper {
+    margin: 50px auto 0;
+    width: 100%;
+}
+
+.icon {
+    display: block;
+    fill: #474544;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.container__contact-form-email {
+    float: right;
+    width: 45%;
+}
+
+#container__contact input[type='text'],
+[type='email'],
+select,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#container__contact input[type='text']:focus,
+#container__contact [type='email']:focus,
+
+textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.container__contact-form-message {
+    float: none;
+}
+
+.container__contact-form-name {
+    float: left;
+    width: 45%;
+}
+
+select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.container__contact-form-subject {
+    width: 100%;
+}
+
+.container__contact-form-telephone {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #474544;
+}
+
+:-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #474544;
+}
+
+#form_button {
+    background: none;
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    outline: none;
+    padding: 16px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#container__contact #form_button:hover {
+    background: #474544;
+    color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        margin: 20px auto;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .underline {
+        width: 68px;
+    }
+
+    #form_button {
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .underline {
+        width: 53px;
+    }
+
+    #container__contact input[type='text'],
+    [type='email'],
+    select,
+    textarea {
+        font-size: 1.6rem;
+    }
+}
+
+/* Model */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-form));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    display: none;
+    animation: fadeIn linear 0.1s;
+    z-index: 2;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.modal__body {
+    --growth-form: 0.7;
+    --growth-to: 1;
+    background-color: var(--while-color-);
+    border-radius: 3px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    animation: growth linear .1s;
+}
+
+.auth-form {
+    width: 500px;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-form-header {
+    font-size: 4rem;
+}
+
+.auth-form-content {
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.auth-form-btn {
+    position: relative;
+    padding: 14px 20px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 170px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.auth-form-btn span {
+    position: relative;
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 8px;
+    z-index: 1;
+}
+
+.auth-form-btn .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+.auth-form-btn .liquid::after,
+.auth-form-btn .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+}
+
+.auth-form-btn .liquid::before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+}
+
+.auth-form-btn .liquid::after {
+
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+}
+
+#container__contact .auth-form-btn:hover .liquid {
+    top: -120px;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+.error-input::placeholder {
+    color: red;
+}
+

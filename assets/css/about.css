@@ -1,0 +1,147 @@
+.about-header__navbar-convert{
+    color: #222;
+}
+
+.about-header__navbar-convert span {
+    font-size: 1.5rem;
+    color: #222;
+    text-align: center;
+    text-decoration: underline;
+}
+.about-header__navbar-convert:hover i{
+    cursor: pointer;
+    color: #ee4d2d;
+    transform: scale(1.1);
+}
+
+.about-header__navbar-convert:hover span{
+    cursor: pointer;
+    color: #ee4d2d;
+}
+
+.about-header__navbar-convert i {
+    font-size: 2rem;
+    margin-right: 4px;
+}
+
+.header__about{
+    font-size:4rem;
+    color: #333;
+    font-weight: 400;
+}
+
+.about-container__review-product{
+    margin-top: 110px;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content-heading{
+    text-align: center;
+    width: 90%;
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 500;
+    margin: 45px 0 20px;
+}
+
+.about-content-description{
+    text-align: center;
+    width: 90%;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #666;
+}
+
+.about-content-btn{
+    padding: 12px;
+    font-size: 2rem;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #ee4d2d;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.about-introduce{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-introduce-item{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.about-introduce-item-heading{
+    font-size: 2.8rem;
+    line-height: 3rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: center;
+    color: #ee4d2d;
+    text-transform: uppercase;
+}
+
+.about-introduce-item-content{
+    font-size: 1.6rem;
+    color: #555;
+    line-height: 2.6rem;
+    text-align: center;
+}
+
+.about-introduce-item-us{
+    margin-top: 60px;
+}
+
+.about-introduce-item-us .about-introduce-item-content{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-introduce-item-us-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-introduce-item-us-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    width: 33%;
+}
+
+.about-introduce-item-us-img{
+    transform: scale(0.9);
+}
+
+.about-introduce-item-us-heading{
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+.about-introduce-item-us-description{
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+.about-header__search-feature-icon:last-child{
+    margin-right: 20px;
+}
+
+.about-header__logo{
+    margin-left: 20px;
+}
+

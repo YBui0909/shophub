@@ -1,0 +1,58 @@
+.policy-list{
+    list-style: decimal;
+    padding: 60px 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 130px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.policy-list i{
+    position: relative;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.4rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50px;
+}
+
+.policy-head-contain{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.policy-head{
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    text-align: center;
+    color: #333;
+    padding: 20px 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.policy-item{
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-left: 10px;
+    margin: 24px 0 10px 10px;
+}
+
+.policy-item ul{
+    margin-top: 4px;
+    text-align: justify;
+}
+
+.policy-item-sub{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin-top: 6px;
+}

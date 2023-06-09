@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/grid.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" href="../../css/contact.css">
+    <link rel="stylesheet" href="../../css/product.css">
+    <link rel="stylesheet" href="../../css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../fonts/fontawesome-free-6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="app" style="overflow: hidden;">
+        <header id="header" class="header">
+            <div class="grid wide">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-login">
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnFacebook()" class="header__navbar-login--icon-link"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnTwitter()" class="header__navbar-login--icon-link"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnReddit()" class="header__navbar-login--icon-link"><i
+                                    class="fa-brands fa-reddit"></i></a>
+                        </li>
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnLinkedIn()" class="header__navbar-login--icon-link"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnTelegram()" class="header__navbar-login--icon-link"><i
+                                    class="fa-brands fa-telegram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-contact">
+                        <li class="header__navbar-contact--phone">
+                            <i class="fa-solid fa-phone"></i> <a href="tel:0364159646">036-415-9646</a>
+                        </li>
+                        <li class="header__navbar-contact--place">
+                            <i class="fa-solid fa-location-dot"></i> Bình Lâm, Hiệp Đức, Quảng Nam
+                        </li>
+                    </ul>
+                    <a href="../../../../index.html" class="header__navbar-convert about-header__navbar-convert "><i
+                            class="fa-regular fa-circle-left"></i><span>Return</span></a>
+                </nav>
+                <div class="header-with-search">
+                    <a href="../../../../index.html" class="header_search-go-home"><i class="fa-solid fa-house"></i></a>
+
+                    <a href="../../../../index.html" class="header__logo" style="margin-left: 14px;">
+                        <i class="header__logo-icon fa-brands fa-shopify"></i>
+                        <div class="header__logo-info">
+                            <div class="header__logo-info-store-name">Shop</div>
+                            <div class="header__logo-info-store-name">Hub</div>
+                        </div>
+                    </a>
+
+                    <ul class="header__search-feature">
+                        <li id="header__search-feature-icon-sign" class="header__search-feature-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="grid wide">
+                <div class="product">
+                    <div class="product-container">
+
+                        <ul class="product-container-img-list">
+                            <li class="product-container-img-item">
+                                <img id="main-image" class="product-container-img-item-main"
+                                    src="https://down-vn.img.susercontent.com/file/f063cff942d3deeef4ee9aaa248f3c0d">
+                                </img>
+                            </li>
+                            <ul class="product-item-list-small">
+                                <li class="product-item-list-small-item">
+                                    <img class="product-item-list-small-item-img"
+                                        src="https://down-vn.img.susercontent.com/file/5defce713aacd8ae955f7483578934d6">
+                                    </img>
+                                </li>
+                                <li class="product-item-list-small-item">
+                                    <img class="product-item-list-small-item-img"
+                                        src="	https://down-vn.img.susercontent.com/file/53dcbd65157eb3b78656d6ab5c56d5c7">
+                                    </img>
+                                </li>
+                                <li class="product-item-list-small-item">
+                                    <img class="product-item-list-small-item-img"
+                                        src="https://down-vn.img.susercontent.com/file/3d2e2d0bf57f378c835f055a5c90adad">
+                                    </img>
+                                </li>
+                                <li class="product-item-list-small-item">
+                                    <img class="product-item-list-small-item-img"
+                                        src="https://down-vn.img.susercontent.com/file/579e7e8c486f61f2bd3530ed3622835f">
+                                    </img>
+                                </li>
+                            </ul>
+                        </ul>
+                        <div class="product-container-infor">
+                            <div class="product-header">
+                                <div class="product-header-content">Áo thun Local Brand RAGLAN IN CAO SU NỔI Hogoto shop
+                                    , Áo
+                                    thun unisex nam nữ form rộng oversize chất liệu 100% Cotton</div>
+                                <!-- <div class="product-header-interact"><button class="product-header-like"><i
+                                            class="fa-regular fa-thumbs-up"></i> liked</button>
+                                    <button class="product-header-like">Share</button>
+                                </div> -->
+                                <ul class="product-header-list-interact">
+                                    <li class="product-header-list-interact-item">4.9
+                                        <div class="product-header-list-interact-item-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </li>
+                                    <li class="product-header-list-interact-item">1.7k<span>Đánh giá</span></li>
+                                    <li class="product-header-list-interact-item">6.7k<span>Đã bán</span></li>
+                                </ul>
+                                <div class="product-header-sale">
+                                    <ul class="product-header-sale-price">
+                                        <li class="product-header-sale-price-item home-product-item__price-old">250.000đ
+                                        </li>
+                                        <li class="product-header-sale-price-item home-product-item__price-current">
+                                            165.000đ</li>
+                                        <li class="product-header-sale-price-item product-header-sale-price-item-label">
+                                            34% GIẢM</li>
+                                    </ul>
+                                    <div class="product-header-sale-time">
+                                        <div class="product-header-sale-time-label">
+                                            <svg viewBox="0 0 108 21" height="21" width="108"
+                                                class="flash-sale-logo flash-sale-logo--default">
+                                                <g fill="currentColor" fill-rule="evenodd">
+                                                    <path
+                                                        d="M0 16.195h3.402v-5.233h4.237V8H3.402V5.037h5.112V2.075H0zm29.784 0l-.855-2.962h-4.335l-.836 2.962H20.26l4.723-14.12h3.576l4.724 14.12zM26.791 5.294h-.04s-.31 1.54-.563 2.43l-.797 2.744h2.74l-.777-2.745c-.252-.889-.563-2.43-.563-2.43zm7.017 9.124s1.807 2.014 5.073 2.014c3.13 0 4.898-2.034 4.898-4.384 0-4.463-6.259-4.147-6.259-5.925 0-.79.778-1.106 1.477-1.106 1.672 0 3.071 1.245 3.071 1.245l1.439-2.824s-1.477-1.6-4.47-1.6c-2.76 0-4.918 1.718-4.918 4.325 0 4.345 6.258 4.285 6.258 5.964 0 .85-.758 1.126-1.457 1.126-1.75 0-3.324-1.462-3.324-1.462zm12.303 1.777h3.402v-5.53h5.054v5.53h3.401V2.075h-3.401v5.648h-5.054V2.075h-3.402zm18.64-1.678s1.692 1.915 4.763 1.915c2.877 0 4.548-1.876 4.548-4.107 0-4.483-6.492-3.871-6.492-6.36 0-.987.914-1.678 2.08-1.678 1.73 0 3.052 1.224 3.052 1.224l1.088-2.073s-1.4-1.501-4.12-1.501c-2.644 0-4.627 1.738-4.627 4.068 0 4.305 6.512 3.87 6.512 6.379 0 1.145-.952 1.698-2.002 1.698-1.944 0-3.44-1.48-3.44-1.48zm19.846 1.678l-1.166-3.594h-4.84l-1.166 3.594H74.84L79.7 2.174h2.623l4.86 14.021zM81.04 4.603h-.039s-.31 1.382-.583 2.172l-1.224 3.752h3.615l-1.224-3.752c-.253-.79-.545-2.172-.545-2.172zm7.911 11.592h8.475v-2.192H91.46V2.173H88.95zm10.477 0H108v-2.192h-6.064v-3.772h4.645V8.04h-4.645V4.366h5.753V2.174h-8.26zM14.255.808l6.142.163-3.391 5.698 3.87 1.086-8.028 12.437.642-8.42-3.613-1.025z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="product-header-sale-time-real">BẮT ĐẦU SAU 02:00, 30 Th05</div>
+                                    </div>
+                                </div>
+                                <ul class="product-header-code">
+                                    <li>
+                                        <span class="product-header-code-des">Mã Giảm Giá Của Shop</span>
+                                        <div class="product-header-code-current">Giảm 20k</div>
+                                    </li>
+                                    <li>
+                                        <span class="product-header-code-des">Combo Khuyến Mãi</span>
+                                        <div class="product-header-code-current product-header-code-current-sale">Mua 2
+                                            & giảm 10k</div>
+                                    </li>
+                                    <li>
+                                        <span class="product-header-code-des">Bảo Hiểm</span>
+                                        <div class="product-header-code-current">Bảo hiểm Thời trang</div>
+                                    </li>
+                                    <li>
+                                        <span class="product-header-code-des">Vận chuyển</span>
+                                        <ul class="product-header-code-list">
+                                            <li class="product-header-code-current">Vận chuyển miễn phí</li>
+                                            <li class="product-header-code-current product-header-code-list-asset">Kho
+                                                tổng : Hà Nội</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="product-header-code-des">Màu sắc</span>
+                                        <ul class="product-header-code-color">
+                                            <li class="product-header-code-color-item">Trắng tay đen</li>
+                                            <li class="product-header-code-color-item">Be tay nâu</li>
+                                            <li class="product-header-code-color-item">Trắng tay xanh</li>
+                                            <li class="product-header-code-color-item">Be tay đen</li>
+                                            <li class="product-header-code-color-item">Xám tay đen</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="product-header-code-des">Size</span>
+                                        <ul class="product-header-code-color product-header-code-size">
+                                            <li class="product-header-code-color-item">S</li>
+                                            <li class="product-header-code-color-item">M</li>
+                                            <li class="product-header-code-color-item">L</li>
+                                            <li class="product-header-code-color-item">XL</li>
+                                            <li class="product-header-code-color-item">XXL</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="product-header-code-des">Số lượng</span>
+                                        <ul class="number-of-product">
+                                            <li class="number-of-product-item">-</li>
+                                            <li class="number-of-product-item">1</li>
+                                            <li class="number-of-product-item">+</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="add-to-cart-btn"><i class="fa-sharp fa-solid fa-cart-plus"></i>Thêm
+                                            vào giỏ hàng</div>
+                                        <button class="add-to-cart-buy">Mua ngay</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product-information">
+                    <div class="col l-10">
+                        <h2 class="product-detail">CHI TIẾT SẢN PHẨM</h2>
+                        <ul class="product-detail-list">
+                            <li class="product-detail-item"><span>Phong cách</span>Cơ bản, Hàn Quốc, Đường phố</li>
+                            <li class="product-detail-item"><span>Chiều dài áo</span>Dài</li>
+                            <li class="product-detail-item"><span>Xuất xứ</span>Việt Nam</li>
+                            <li class="product-detail-item"><span>Chiều dài tay áo</span>Dài 3/4</li>
+                            <li class="product-detail-item"><span>Dáng kiểu áo</span>Oversized</li>
+                            <li class="product-detail-item"><span>Cổ áo</span>Cổ tròn</li>
+                            <li class="product-detail-item"><span>Chất liệu</span>Cotton</li>
+                            <li class="product-detail-item"><span>Mẫu</span>In</li>
+                            <li class="product-detail-item"><span>Mùa</span>Mùa hè</li>
+                            <li class="product-detail-item"><span>Tên tổ chức chịu trách nhiệm</span>HOGOTOCLUB</li>
+                            <li class="product-detail-item"><span>Địa chỉ tổ chức chịu trách nhiệm sản xuất
+                                </span>NỘI ĐỒNG -MÊ LINH - HÀ
+                                NỘI</li>
+                            <li class="product-detail-item"><span>Kho hàng</span>2517</li>
+                            <li class="product-detail-item"><span>Gửi từ</span>Hà Nội</li>
+                        </ul>
+                        <h2 class="product-detail">Bình luận</h2>
+                        <ul class="product-detail-comment">
+                            <div class="product-detail-comment-user"
+                                style="background-image: url(../../images/aboutus.jpg);"></div>
+                            <li class="product-detail-comment-item">
+                                <div class="product-detail-comment-item-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-detail-comment-item-description">
+                                    <ul class="product-detail-list product-detail-comment-item-description-list">
+                                        <li class="product-detail-item">Chất liệu:<span>không biết</span></li>
+                                        <li class="product-detail-item">Màu sắc:<span>be</span></li>
+                                        <li class="product-detail-item">Đúng với mô tả:<span>đúng mô tả</span></li>
+                                        <span id="comment">Giao hàng khá nhanh , shipper dễ thương , 99 điểmmmmm</span>
+                                        <ul class="product-detail-comment-item-description-img">
+                                            <li class="product-detail-comment-item-description-image">
+                                                <div
+                                                    style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lffkgjjkqs1w69);">
+                                                </div>
+                                            </li>
+                                            <li class="product-detail-comment-item-description-image">
+                                                <div
+                                                    style="background-image: url(https://down-ws-vn.img.susercontent.com/vn-11134103-23030-cosegsmpnpovc8_tn.webp);">
+                                                </div>
+                                            </li>
+                                            <li class="product-detail-comment-item-description-image">
+                                                <div
+                                                    style="background-image: url(https://down-ws-vn.img.susercontent.com/vn-11134103-23030-wbkn3jxpnpove6_tn.webp);">
+                                                </div>
+                                            </li>
+                                            <li class="product-detail-comment-item-description-image">
+                                                <div
+                                                    style="background-image: url(https://down-ws-vn.img.susercontent.com/vn-11134103-7qukw-letz4ogslz6f71_tn.webp);">
+                                                </div>
+                                            </li>
+                                            <li class="product-detail-comment-item-description-image">
+                                                <div
+                                                    style="background-image: url(https://down-ws-vn.img.susercontent.com/vn-11134103-7qukw-lexxwraisx3e68_tn.webp);">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="product-detail-comment">
+                            <div class="product-detail-comment-user"
+                                style="background-image: url(../../images/5968965.png);"></div>
+                            <li class="product-detail-comment-item">
+                                <div class="product-detail-comment-item-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-detail-comment-item-description">
+                                    <ul class="product-detail-list product-detail-comment-item-description-list">
+                                        <li class="product-detail-item">Chất liệu:<span>vải</span></li>
+                                        <li class="product-detail-item">Màu sắc:<span>nâu</span></li>
+                                        <li class="product-detail-item">Đúng với mô tả:<span>đúng mô tả</span></li>
+                                        <span id="comment">Áo phải gọi là tuyệt cà là vời luôn, rẻ mà chất lượng quá
+                                            trời. Chất vải mát mẻ không mỏng quá cũng không dày quá hợp mặc mùa hè lắm.
+                                            Nên mua nha các bạn ơi 🌷 mình 49kg m52 mặc vừa đẹp nhé</span>
+                                        <ul class="product-detail-comment-item-description-img">
+                                            <li class="product-detail-comment-item-description-image">
+                                                <div
+                                                    style="background-image: url(https://down-ws-vn.img.susercontent.com/vn-11134103-7qukw-levhwagmwpsa92_tn.webp);">
+                                                </div>
+                                            </li>
+                                            <li class="product-detail-comment-item-description-image">
+                                                <div
+                                                    style="background-image: url(https://down-ws-vn.img.susercontent.com/vn-11134103-7qukw-levhwagmvbdj25_tn.webp);">
+                                                </div>
+                                            </li>
+                                            <li class="product-detail-comment-item-description-image">
+                                                <div
+                                                    style="background-image: url(https://down-ws-vn.img.susercontent.com/vn-11134103-7qukw-levhwagmwpxz31_tn.webp);">
+                                                </div>
+                                            </li>
+                                            <li class="product-detail-comment-item-description-image">
+                                                <div
+                                                    style="background-image: url(https://down-ws-vn.img.susercontent.com/vn-11134103-7qukw-levhwagmvb7ua7_tn.webp);">
+                                                </div>
+                                            </li>
+                                            <li class="product-detail-comment-item-description-image">
+                                                <div
+                                                    style="background-image: url(https://down-ws-vn.img.susercontent.com/vn-11134103-7qukw-lexxwra8tbvbed_tn.webp);">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2 referent-product" style="margin-top: 30px;padding: 0;">
+                        <div class="col l-12 m-4 c-6">
+                            <div class="home-product-item">
+                                <a href="/assets/htmls/productreviews/productreview1.html">
+                                    <div class="home-product-item__img" style="
+                  background-image: url(https://down-vn.img.susercontent.com/file/sg-11134201-22090-ed40iaaoixhv19);
+                "></div>
+                                    <h4 class="home-product-item__name">
+                                        Gấu Bông Khủng Long Hóa Ếch Xanh, Gối Ôm Cho Bé Chất Liệu Cao Cấp, Mềm Mại Dài
+                                        52Cm
+                                    </h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">460.000đ</span>
+                                        <span class="home-product-item__price-current"
+                                            style="font-size: 2rem;">120.000đ</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like"><i class="fa-solid fa-heart"></i></span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">1k đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__sale-percent">68%</span>
+                                        <span class="home-product-item__sale-label">Sale</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-12 m-4 c-6">
+                            <div class="home-product-item">
+                                <a href="/assets/htmls/productreviews/productreview2.html">
+                                    <div class="home-product-item__img" style="
+                  background-image: url(https://down-vn.img.susercontent.com/file/vn-11134201-23020-lhm9o8ck8vnve2);
+                "></div>
+                                    <h4 class="home-product-item__name">
+                                        Áo khoác dù in DERERRO form rộng unisex (Ảnh shop tự chụp)
+                                    </h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">230.000đ</span>
+                                        <span class="home-product-item__price-current"
+                                            style="font-size: 2rem;">110.000đ</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like"><i class="fa-solid fa-heart"></i></span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">2k đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__sale-percent">43%</span>
+                                        <span class="home-product-item__sale-label">Sale</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-12 m-4 c-6">
+                            <div class="home-product-item">
+                                <a href="/assets/htmls/productreviews/productreview3.html">
+                                    <div class="home-product-item__img" style="
+                  background-image: url(https://down-vn.img.susercontent.com/file/de92e94d30abf93061c020bbc5cc77ec);
+                "></div>
+                                    <h4 class="home-product-item__name">
+                                        Giày _Nike Air Force 1 Xám Da Lộn lông Chuột Bản Cao Cấp, Giày AF1 Nam Nữ Đế Air
+                                        Bản Chuẩn Full Phụ Kiện
+                                    </h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">1.900.000đ</span>
+                                        <span class="home-product-item__price-current"
+                                            style="font-size: 2rem;">1.400.000đ</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like"><i class="fa-solid fa-heart"></i></span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                            <i class="home-product-item-star-yellow fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">1.2k đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__sale">
+                                        <span class="home-product-item__sale-percent">17%</span>
+                                        <span class="home-product-item__sale-label">Sale</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row footer-container">
+                    <div class="col l-3 m-4 c-4 footer-content">
+                        <h1 class="footer-content-head">Quick Links</h1>
+                        <ul class="footer-content-list">
+                            <li class="footer-content-item"><a href="../../../../index.html"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Home</a></li>
+                            <li class="footer-content-item"><a href="#product"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Product</a></li>
+                            <li class="footer-content-item"><a href="../../htmls/about.html"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>About</a></li>
+                            <li class="footer-content-item"><a href="../../htmls/contact.html"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Contact</a></li>
+                            <li class="footer-content-item"><a href="../../htmls/policy.html"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-4 c-4 footer-content">
+                        <h1 class="footer-content-head">Resources</h1>
+                        <ul class="footer-content-list">
+                            <li class="footer-content-item"><a href="https://www.youtube.com/"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Youtube</a></li>
+                            <li class="footer-content-item"><a href="https://chat.openai.com/"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>ChatGPT</a></li>
+                            <li class="footer-content-item"><a href="https://shopee.vn/"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Shopee</a></li>
+                            <li class="footer-content-item"><a
+                                    href="https://unsplash.com/s/collections/shopping?plus=none"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Unsplash</a></li>
+                            <li class="footer-content-item"><a href="https://fontawesome.com/search?q=star&o=r"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Fontawesome</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-4 c-4 footer-content">
+                        <h1 class="footer-content-head">My Socials</h1>
+                        <ul class="footer-content-list">
+                            <li class="footer-content-item footer-content-item-social"><a
+                                    href="https://www.facebook.com/ybvns/"><i
+                                        class="fa-brands fa-facebook"></i>Facebook</a></li>
+                            <li class="footer-content-item footer-content-item-social"><a
+                                    href="https://www.instagram.com/ybvns/"><i
+                                        class="fa-brands fa-instagram"></i>Instagram</a></li>
+                            <li class="footer-content-item footer-content-item-social"><a
+                                    href="https://github.com/YBui0909"><i class="fa-brands fa-github"></i>Github</a>
+                            </li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"><i
+                                        class="fa-brands fa-telegram"></i>Telegram</a></li>
+                            <li class="footer-content-item footer-content-item-social"><a
+                                    href="https://www.tiktok.com/@buiy.22ns"><i
+                                        class="fa-brands fa-tiktok"></i>Tiktok</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-12 c-12 footer-content">
+                        <h1 class="footer-content-head">Payment Methods</h1>
+                        <ul class="footer-content-list footer-content-pay">
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../../images/pay1.png" alt=""></a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../../images/pay2.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../../images/pay3.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../../images/pay4.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../../images/pay5.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../../images/pay6.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../../images/pay7.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../../images/pay8.png" alt="">
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-12 footer-copyright" style="display: flex; justify-content: space-around;">
+                        <div class="footer-copyright-reserve">© 2023 ShopHub. Tất cả các quyền được bảo lưu.</div>
+                        <a href="../../htmls/policy.html" class="footer-copyright-privacy-policy">CHÍNH SÁCH BẢO
+                            MẬT</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Model layout -->
+    <div id="my-modal" class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form contact-auth-form">
+                <h1 class="auth-form-header">Thank You!</h1>
+                <div class="auth-form-content"> Thank you so much for taking the time to provide feedback on our
+                    product. We greatly appreciate your input and value your opinion. Your feedback helps us
+                    understand how our product is being received and allows us to make any necessary improvements.
+                </div>
+                <a class="auth-form-btn" href="../../../../index.html">
+                    <span>Go Home</span>
+                    <div class="liquid"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="my-modal_sign" class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form" style="background-color: transparent; box-shadow: none; width: unset; padding: 0;">
+                <div class="auth-form-main">
+                    <input type="checkbox" id="auth-form-main-chk" aria-hidden="true">
+
+                    <div class="auth-form-main-signup">
+                        <form class="auth-form-main-signup-form">
+                            <label class="auth-form-main-signup-label" for="auth-form-main-chk" aria-hidden="true">Sign
+                                up</label>
+                            <input type="text" name="txt" placeholder="User name" required="">
+                            <input type="email" name="email" placeholder="Email/Phone" required="">
+                            <input type="password" name="pswd" placeholder="Password" required="">
+                            <button>Sign up</button>
+                        </form>
+                    </div>
+
+                    <div class="auth-form-main-login">
+                        <form class="auth-form-main-login-form">
+                            <label class="auth-form-main-login-label" for="auth-form-main-chk"
+                                aria-hidden="true">Login</label>
+                            <input type="email" name="email" placeholder="Email/Phone" required="">
+                            <input type="password" name="pswd" placeholder="Password" required="">
+                            <button>Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../javascripts/js.js"></script>
+    <script src="../../javascripts/contact.js"></script>
+    <script>
+        var liItems = document.querySelectorAll('.product-item-list-small-item');
+
+        liItems.forEach(function (li) {
+            li.addEventListener('click', function () {
+                var newSrc = li.querySelector('img').getAttribute('src');
+
+                var mainImage = document.getElementById('main-image');
+                mainImage.setAttribute('src', newSrc);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="app" style="overflow: hidden;">
+        <header id="header" class="header">
+            <div class="grid wide">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-login">
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnFacebook()" class="header__navbar-login--icon-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnTwitter()" class="header__navbar-login--icon-link"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnReddit()" class="header__navbar-login--icon-link"><i class="fa-brands fa-reddit"></i></a>
+                        </li>
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnLinkedIn()" class="header__navbar-login--icon-link"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li class="header__navbar-login--icon">
+                            <a href="#" onclick="shareOnTelegram()" class="header__navbar-login--icon-link"><i class="fa-brands fa-telegram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-contact">
+                        <li class="header__navbar-contact--phone">
+                            <i class="fa-solid fa-phone"></i> <a href="tel:0364159646">036-415-9646</a>
+                        </li>
+                        <li class="header__navbar-contact--place">
+                            <i class="fa-solid fa-location-dot"></i> Bình Lâm, Hiệp Đức, Quảng Nam
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-convert">
+                        <li class="header__navbar-convert-currency">
+                            USD $<i class="fa-solid fa-chevron-down"></i>
+                            <ul class="header__navbar-contact--phone-list">
+                                <li>VNĐ đ</li>
+                                <li>EUR €</li>
+                                <li>USD $</li>
+                                <li>JPY ¥</li>
+                                <li>GBP £</li>
+                            </ul>
+                        </li>
+                        <li class="header__navbar-convert-currency">
+                            Tiếng Việt<i class="fa-solid fa-chevron-down"></i>
+                            <ul class="header__navbar-contact--language-list">
+                                <li>Tiếng Việt</li>
+                                <li>Tiếng Anh</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-with-search">
+                    <a href="../../index.html" class="header_search-go-home"><i class="fa-solid fa-house"></i></a>
+                    <a href="../../index.html" class="about-header__logo header__logo">
+                        <i class="header__logo-icon fa-brands fa-shopify"></i>
+                        <div class="header__logo-info">
+                            <div class="header__logo-info-store-name">Shop</div>
+                            <div class="header__logo-info-store-name">Hub</div>
+                        </div>
+                    </a>
+                    <div class="header__about"></div>
+                    <ul class="header__search-feature">
+                        <li id="header__search-feature-icon-sign" class="header__search-feature-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </li>
+                        <li id="header__search-feature-icon-notify" class="header__search-feature-icon"
+                            style="margin-left: 40px;">
+                            <i class="fa-sharp fa-regular fa-bell"></i>
+                            <ul class="header__search-feature-icon-notify-list">
+                                <h1 class="header__search-feature-icon-notify-head">Thông báo mới nhận</h1>
+                                <li class="header__search-feature-icon-notify-item">
+                                    <img src="https://images.freeimages.com/fic/images/icons/573/must_have/256/user.png"
+                                        alt="" class="header__search-feature-icon-notify-img">
+                                    <div class="header__search-feature-icon-notify-content">
+                                        <h5 class="header__search-feature-icon-notify-content-head">Xác thực tài khoản
+                                            của bạn!</h5>
+                                        <span class="header__search-feature-icon-notify-content-description">Xin chào!
+                                            Chúng tôi cần xác thực tài khoản của bạn để đảm bảo an toàn và bảo mật thông
+                                            tin cá nhân. Vui lòng kiểm tra hộp thư đến của bạn để nhận mã xác thực. Sau
+                                            đó, hãy nhập mã vào ứng dụng của chúng tôi để hoàn tất quá trình xác thực.
+                                            Nếu bạn không nhận được email từ chúng tôi, vui lòng kiểm tra thư mục Spam
+                                            hoặc liên hệ với bộ phận hỗ trợ của chúng tôi để được trợ giúp</span>
+                                    </div>
+                                </li>
+                                <li class="header__search-feature-icon-notify-item">
+                                    <img src="https://media.dolenglish.vn/PUBLIC/MEDIA/cd970e7d-4ed6-4b1e-902e-9f898b33edca.png"
+                                        alt="" class="header__search-feature-icon-notify-img">
+                                    <div class="header__search-feature-icon-notify-content">
+                                        <h5 class="header__search-feature-icon-notify-content-head">Voucher Freeship 50k
+                                        </h5>
+                                        <span class="header__search-feature-icon-notify-content-description">Mã Freeship
+                                            50k cho đơn hàng 0đ bất kì có sẵn trong ví<br>Sản phầm sale sốc sắp cháy
+                                            hàng</span>
+                                    </div>
+                                </li>
+                                <li class="header__search-feature-icon-notify-item">
+                                    <img src="https://cards.vpbank.com.vn/landing/3736ccafb43a08a0e17428ba70b0e6e7.png"
+                                        alt="" class="header__search-feature-icon-notify-img">
+                                    <div class="header__search-feature-icon-notify-content">
+                                        <h5 class="header__search-feature-icon-notify-content-head">Bạn ơi có Voucher
+                                            giảm giá đến 200.000đ</h5>
+                                        <span class="header__search-feature-icon-notify-content-description">Voucher
+                                            Xtra có sẵn trong kho Voucher<br>Loạt sản phẩm sale khủng đợi bạn!</span>
+                                    </div>
+                                </li>
+                                <li class="header__search-feature-icon-notify-item">
+                                    <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgrttr7kwb8z2c"
+                                        alt="" class="header__search-feature-icon-notify-img">
+                                    <div class="header__search-feature-icon-notify-content">
+                                        <h5 class="header__search-feature-icon-notify-content-head">ybv22ns_ đã trả lời
+                                            bình luận của bạn</h5>
+                                        <span class="header__search-feature-icon-notify-content-description">Balo cầm
+                                            rất nặng tay, chắc chắn, không chỉ thừa, đường may cẩn thận, dày dặn nha,
+                                            giao hàng nhanh, đặt hôm trước, hôm sau đã nhận được rồi. Nói chung là ưng
+                                            lắm nha, rcm m.n nên mua</span>
+                                    </div>
+                                </li>
+                                <h5 class="header__search-feature-icon-notify-bottom">Xem tất cả</h5>
+                            </ul>
+                        </li>
+                        <li id="header__search-feature-icon-cart" class="header__search-feature-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="header__search-feature-icon-cart-product">
+                                <h2 class="header__search-feature-icon-cart-product-head">Sản phẩm mới thêm</h2>
+                                <ul class="header__search-feature-icon-cart-list">
+                                    <li class="header__search-feature-icon-cart-item">
+                                        <div class="header__search-feature-icon-cart-item-img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-23020-zyr9167z8lnv30);">
+                                        </div>
+                                        <div class="header__search-feature-icon-cart-item-content">Dép nam nữ quai ngang
+                                            dập chìm chữ rất hót 2023 size 38-43</div>
+                                        <div class="header__search-feature-icon-cart-item-price">14.000đ</div>
+                                    </li>
+                                    <li class="header__search-feature-icon-cart-item">
+                                        <div class="header__search-feature-icon-cart-item-img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/ea1bd99a5f2a3d7a90560a5609c0ab33);">
+                                        </div>
+                                        <div class="header__search-feature-icon-cart-item-content">Dép nam nữ quai ngang
+                                            dập chìm chữ rất hót 2023 size 38-43</div>
+                                        <div class="header__search-feature-icon-cart-item-price">25.000đ</div>
+                                    </li>
+                                    <li class="header__search-feature-icon-cart-item">
+                                        <div class="header__search-feature-icon-cart-item-img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/bcbaa1a1563639ccefd93df1a1462f1a);">
+                                        </div>
+                                        <div class="header__search-feature-icon-cart-item-content">kính bơi trẻ em cao
+                                            cấp Kính bơi chống mờ cho bé trai và bé gái</div>
+                                        <div class="header__search-feature-icon-cart-item-price">79.000đ</div>
+                                    </li>
+                                </ul>
+                                <div class="header__search-feature-icon-cart-bottom">
+                                    <h3>Xem giỏ hàng</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="header__search-feature-icon-bar" class="header__search-feature-icon">
+                            <i class="fa-solid fa-bars"></i>
+                            <div class="header__search-feature-icon-bar-list">
+                                <ul class="header__search-feature-icon-bar-nav">
+                                    <h3>Quick Link</h3>
+                                    <li><a href="/index.html" class="header__search-feature-icon-bar-nav-item">Home</a></li>
+                                    <li><a href="about.html" class="header__search-feature-icon-bar-nav-item">About</a></li>
+                                    <li><a href="contact.html" class="header__search-feature-icon-bar-nav-item">Contact</a></li>
+                                    <li><a href="policy.html" class="header__search-feature-icon-bar-nav-item">Policy</a></li>
+                                </ul>
+                                <ul class="header__search-feature-icon-bar-cat">
+                                    <h3>Category</h3>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('bagBlock')">Bag</li>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('shoesBlock')">Shoes</li>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('glassBlock')">Glass</li>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('jacketBlock')">Jacket</li>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('perfumeBlock')">Teedy Bear</li>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('dressBlock')">Dress</li>
+                                    <li class="header__search-feature-icon-bar-cat-item" onclick="showBlock('shortBlock')">Hat</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="grid wide">
+                <div class="container__review-product about-container__review-product" style="
+                background-image: url(../images/review-image-about.avif);
+                background-size: cover;
+                background-repeat: no-repeat;
+              ">
+                </div>
+                <div class="row about-content">
+                    <h1 class="about-content-heading">ShopHub là nền tảng thương mại điện tử hàng đầu tại Đông Nam Á và
+                        Trung Á.</h1>
+                    <div class="about-content-description">
+                        Ra mắt năm 2021, nền tảng thương mại ShopHub được xây dựng nhằm cung cấp cho người dùng những
+                        trải nghiệm dễ dàng, an toàn và nhanh chóng khi mua sắm trực tuyến thông qua hệ thống hỗ trợ
+                        thanh toán và vận hành vững mạnh. Chúng tôi có niềm tin mạnh mẽ rằng trải nghiệm mua sắm trực
+                        tuyến phải đơn giản, dễ dàng và mang đến cảm xúc vui thích. Niềm tin này truyền cảm hứng và thúc
+                        đẩy chúng tôi mỗi ngày tại ShopHub.
+                    </div>
+                    <a href="../../index.html" class="about-content-btn">Tìm hiểu ShopHub</a>
+                </div>
+                <ul class="row about-introduce">
+                    <li class="col l-5 about-introduce-item">
+                        <h1 class="about-introduce-item-heading">Mục tiêu của chúng tôi</h1>
+                        <div class="about-introduce-item-content">Chúng tôi tin tưởng vào sức mạnh khai triển của công
+                            nghệ và mong muốn góp phần làm cho thế giới trở nên tốt đẹp hơn bằng việc kết nối cộng đồng
+                            người mua và người bán thông qua việc cung cấp một nền tảng thương mại điện tử.</div>
+                    </li>
+                    <li class="col l-5 about-introduce-item">
+                        <h1 class="about-introduce-item-heading">Định vị của chúng tôi</h1>
+                        <div class="about-introduce-item-content">Đối với người dùng trên toàn khu vực, ShopHub mang đến
+                            trải nghiệm mua sắm trực tuyến tích hợp với vô số sản phẩm đa dạng chủng loại, cộng đồng
+                            người dùng năng động và chuỗi dịch vụ liền mạch.</div>
+                    </li>
+                    <li class="col l-12 about-introduce-item about-introduce-item-us">
+                        <h1 class="about-introduce-item-heading">ĐẶC ĐIỂM CON NGƯỜI CHÚNG TÔI</h1>
+                        <div class="about-introduce-item-content">Để định nghĩa chúng tôi là ai - thông qua lời nói hay
+                            cách ứng xử trong nhiều trường hợp khác nhau - thì thực chất, chúng tôi Gần gũi, Vui vẻ và
+                            Đồng lòng. Đây là những đặc tính chính và nổi bật trong từng bước đường phát triển của
+                            ShopHub.</div>
+                        <ul class="about-introduce-item-us-list">
+                            <li class="about-introduce-item-us-item">
+                                <img src="../images/about-us/gangui1.png" alt="Gan gui"
+                                    class="about-introduce-item-us-img">
+                                <h1 class="about-introduce-item-us-heading">Gần Gũi</h1>
+                                <div class="about-introduce-item-us-description">Chúng tôi có niềm tin vào tính gần gũi
+                                    mà thanh liêm, nền tảng vững chắc cho một cuộc sống trung thực, bình dân và thành
+                                    thật với bản thân.</div>
+                            </li>
+                            <li class="about-introduce-item-us-item">
+                                <img src="../images/about-us/vuive.png" alt="" class="about-introduce-item-us-img">
+                                <h1 class="about-introduce-item-us-heading">Vui Vẻ</h1>
+                                <div class="about-introduce-item-us-description">Chúng tôi dễ gần, đáng yêu và tràn đầy
+                                    năng lượng, luôn mang đến niềm vui cho những người xung quanh.</div>
+                            </li>
+                            <li class="about-introduce-item-us-item">
+                                <img src="../images/about-us/donglong.png" alt="" class="about-introduce-item-us-img">
+                                <h1 class="about-introduce-item-us-heading">Đồng Lòng</h1>
+                                <div class="about-introduce-item-us-description">Chúng tôi thích tận hưởng thời gian bên
+                                    nhau giống như tận hưởng việc mua sắm trực tuyến với người thân và bạn bè - làm
+                                    những việc yêu thích cùng nhau như một đại gia đình lớn.</div>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row footer-container">
+                    <div class="col l-3 m-4 c-4 footer-content">
+                        <h1 class="footer-content-head">Quick Links</h1>
+                        <ul class="footer-content-list">
+                            <li class="footer-content-item"><a href="../../index.html"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Home</a></li>
+                            <li class="footer-content-item"><a href="#product"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Product</a></li>
+                            <li class="footer-content-item"><a href="../htmls/about.html"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>About</a></li>
+                            <li class="footer-content-item"><a href="../htmls/contact.html"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Contact</a></li>
+                            <li class="footer-content-item"><a href="../htmls/policy.html"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-4 c-4 footer-content">
+                        <h1 class="footer-content-head">Resources</h1>
+                        <ul class="footer-content-list">
+                            <li class="footer-content-item"><a href="https://www.youtube.com/"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Youtube</a></li>
+                            <li class="footer-content-item"><a href="https://chat.openai.com/"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>ChatGPT</a></li>
+                            <li class="footer-content-item"><a href="https://shopee.vn/"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Shopee</a></li>
+                            <li class="footer-content-item"><a
+                                    href="https://unsplash.com/s/collections/shopping?plus=none"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Unsplash</a></li>
+                            <li class="footer-content-item"><a href="https://fontawesome.com/search?q=star&o=r"><i
+                                        class="fa-sharp fa-solid fa-arrow-right"></i>Fontawesome</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-4 c-4 footer-content">
+                        <h1 class="footer-content-head">My Socials</h1>
+                        <ul class="footer-content-list">
+                            <li class="footer-content-item footer-content-item-social"><a
+                                    href="https://www.facebook.com/ybvns/"><i
+                                        class="fa-brands fa-facebook"></i>Facebook</a></li>
+                            <li class="footer-content-item footer-content-item-social"><a
+                                    href="https://www.instagram.com/ybvns/"><i
+                                        class="fa-brands fa-instagram"></i>Instagram</a></li>
+                            <li class="footer-content-item footer-content-item-social"><a
+                                    href="https://github.com/YBui0909"><i class="fa-brands fa-github"></i>Github</a>
+                            </li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"><i
+                                        class="fa-brands fa-telegram"></i>Telegram</a></li>
+                            <li class="footer-content-item footer-content-item-social"><a
+                                    href="https://www.tiktok.com/@buiy.22ns"><i
+                                        class="fa-brands fa-tiktok"></i>Tiktok</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-12 c-12 footer-content">
+                        <h1 class="footer-content-head">Payment Methods</h1>
+                        <ul class="footer-content-list footer-content-pay">
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay1.png" alt=""></a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay2.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay3.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay4.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay5.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay6.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay7.png" alt="">
+                                </a></li>
+                            <li class="footer-content-item footer-content-item-social"><a href="#"> <img
+                                        src="../images/pay8.png" alt="">
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-12 footer-copyright" style="display: flex; justify-content: space-around;">
+                        <div class="footer-copyright-reserve">© 2023 ShopHub. Tất cả các quyền được bảo lưu.</div>
+                        <a href="../htmls/policy.html" class="footer-copyright-privacy-policy">CHÍNH SÁCH BẢO
+                            MẬT</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="my-modal_sign" class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form">
+                <div class="auth-form-main">
+                    <input type="checkbox" id="auth-form-main-chk" aria-hidden="true">
+
+                    <div class="auth-form-main-signup">
+                        <form class="auth-form-main-signup-form">
+                            <label class="auth-form-main-signup-label" for="auth-form-main-chk" aria-hidden="true">Sign
+                                up</label>
+                            <input type="text" name="txt" placeholder="User name" required="">
+                            <input type="email" name="email" placeholder="Email/Phone" required="">
+                            <input type="password" name="pswd" placeholder="Password" required="">
+                            <button>Sign up</button>
+                        </form>
+                    </div>
+
+                    <div class="auth-form-main-login">
+                        <form class="auth-form-main-login-form">
+                            <label class="auth-form-main-login-label" for="auth-form-main-chk"
+                                aria-hidden="true">Login</label>
+                            <input type="email" name="email" placeholder="Email/Phone" required="">
+                            <input type="password" name="pswd" placeholder="Password" required="">
+                            <button>Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../javascripts/about.js"></script>
+    <script src="../javascripts/js.js"></script>
+    <script>
+        var headerIconBar = document.getElementById(
+          "header__search-feature-icon-bar"
+        );
+        var headerBarList = document.querySelector(
+          ".header__search-feature-icon-bar-list"
+        );
+  
+        headerIconBar.addEventListener("click", function (event) {
+          event.stopPropagation();
+          var isListDisplayed = headerBarList.style.display === "block";
+  
+          if (isListDisplayed) {
+            headerBarList.style.display = "none";
+          } else {
+            headerBarList.style.display = "block";
+          }
+        });
+  
+        document.addEventListener("click", function (event) {
+          if (!headerIconBar.contains(event.target)) {
+            headerBarList.style.display = "none";
+          }
+        });
+      </script>
+</body>
+
+</html>
